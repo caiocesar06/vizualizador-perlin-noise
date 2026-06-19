@@ -1,0 +1,51 @@
+# ==========================================
+# 1. GODOT 4
+# ==========================================
+/.godot/
+/android/
+/export_presets.cfg
+*.translation
+
+# ==========================================
+# 2. C++ & CMAKE (ARTEFATOS DE BUILD)
+# ==========================================
+/src/build/
+/build/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.cmake
+install_manifest.txt
+compile_commands.json
+.ninja_deps
+.ninja_log
+
+# ==========================================
+# 3. BINÁRIOS E BIBLIOTECAS COMPILADAS
+# ==========================================
+# Ignora todos os binários gerados ou baixados em qualquer pasta
+*.dll
+*.so
+*.dylib
+*.exe
+*.obj
+*.o
+*.a
+*.lib
+*.pdb
+*.exp
+
+# EXCEÇÃO CRÍTICA: Manter o manifesto de configuração do GDExtension
+# O Godot precisa desse arquivo para saber como ler a extensão,
+# mesmo que a .dll não esteja no repositório.
+!bin/*.gdextension
+
+# ==========================================
+# 4. OS & IDE (VS CODE, VISUAL STUDIO, ETC)
+# ==========================================
+/.vscode/
+*.code-workspace
+/.idea/
+.DS_Store
+Thumbs.db
+*.md

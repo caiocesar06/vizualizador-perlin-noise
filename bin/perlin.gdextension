@@ -1,0 +1,17 @@
+[configuration]
+entry_symbol = "perlin_library_init"
+compatibility_minimum = 4.2
+reloadable = true
+
+[libraries]
+windows.editor.x86_64 = "res://bin/perlin_noise_native.dll"
+windows.debug.x86_64 = "res://bin/perlin_noise_native.dll"
+windows.release.x86_64 = "res://bin/perlin_noise_native.dll"
+
+linux.editor.x86_64 = "res://bin/perlin_noise_native.so"
+linux.debug.x86_64 = "res://bin/perlin_noise_native.so"
+linux.release.x86_64 = "res://bin/perlin_noise_native.so"
+
+macos.editor = "res://bin/perlin_noise_native.dylib"
+macos.debug = "res://bin/perlin_noise_native.dylib"
+macos.release = "res://bin/perlin_noise_native.dylib"

@@ -10,7 +10,6 @@
 # 2. C++ & CMAKE (ARTEFATOS DE BUILD)
 # ==========================================
 /src/build/
-/src/godot-cpp/
 /build/
 CMakeCache.txt
 CMakeFiles/

@@ -11,7 +11,6 @@ set(TARGET_NAME "perlin_noise_native")
 
 add_library(${TARGET_NAME} SHARED
     perlin_wrapper.cpp
-    ruido_base.cpp
     register_types.cpp
 )
 
